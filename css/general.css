@@ -12,3 +12,26 @@ nav {
     border-radius: 25px;
     margin: 25px;
 }
+
+
+@media (width<=630px) {
+    .navButton {
+    margin: 5px;
+}
+}
+
+.hotelImg {
+    width: 400px;
+    height: auto;
+}
+
+.blogsList {
+    display: flex;
+}
+
+.blog {
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    border: 2px solid black;
+}
