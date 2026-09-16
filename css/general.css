@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+}
+
+nav {
+    background: #632b6e;
+}
+
+.navButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 25px;
+}
