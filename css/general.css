@@ -20,7 +20,7 @@ nav {
 }
 }
 
-.hotelImg {
+.projImg {
     width: 400px;
     height: auto;
 }
@@ -34,4 +34,13 @@ nav {
     height: 400px;
     margin: 20px;
     border: 2px solid black;
+}
+
+.projectsContainer {
+    margin-left: 5%;
+}
+
+.searchBar {
+    display: flex;
+    margin-top: 10px;
 }
