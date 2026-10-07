@@ -6,6 +6,8 @@
     <title>Home page</title>
     <link rel="icon" href="/Icon.png" type="png">
     <link rel="stylesheet" href="/css/general.css">
+    <script src="/js/form.js" defer></script>
+    <script src="/js/weatherAPI.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,9 +21,29 @@
         <a href="/html/contact.html"><button class="navButton">Contact</button></a>
     </nav>
 
-    <body>
-        
-    </body>
+    <main>
+        <h2>Contactformulier</h2>
+        <p>Stel hier een vraag over de site.</p>
+
+        <form id="contact-form" novalidate></form>
+            <label for="naam">Naam</label>
+            <input id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
+            <span id="naam-error" role="alert"></span>
+            <br>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required aria-describedby="email-error" aria-invalid="false">
+            <span id="email-error" role="alert"></span>
+            <br>
+
+            <label for="bericht">Stel hier je vraag</label>
+            <textarea id="bericht" required minlength="10" aria-describedby="bericht-error" ariainvalid="false"></textarea>
+            <span id="bericht-error" role="alert"></span>
+
+            <button type="submit" id="contactButton">Versturen</button>
+            <div id="form-status" aria-live="polite"></div>
+        <form></form>
+    </main>
     
 
 </body>
